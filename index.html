@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофе в Иваново</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        footer {
+            text-align: center;
+        }
+
+        .hero-section {
+            background-image: url('./imgs/main_coffee.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: ''; /* Создание псевдоэлемента для затемнения */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Цвет затемнения */
+            z-index: 1; /* Установка z-index, чтобы затемнение было над изображением */
+        }
+
+        .hero-section-content {
+            position: relative; /* Добавлено позиционирование */
+            z-index: 2; /* Установка z-index для контента */
+            color: white; /* Цвет текста */
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+        }
+
+        .feature-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .feature-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .feature-box i {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <img class="img-fluid" style="max-width: 100px" src="imgs/logo_coffee.png">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link fs-5" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="./templates/prices.html">Цены</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="./templates/aboutus.html">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5" href="./templates/form.html">Форма обратной связи</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section class="hero-section">
+        <div class="container hero-section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Добро пожаловать в кофейню в Иваново!</h1>
+                    <p>Мы предлагаем лучший свежесваренный кофе для вас.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <h2>Наши особенности</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-coffee"></i>
+                        <h3>Качественный кофе</h3>
+                        <p>Мы используем только лучшие зерна кофе для приготовления напитков.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-mug-hot"></i>
+                        <h3>Уютная атмосфера</h3>
+                        <p>Наслаждайтесь своим кофе в уютной обстановке нашей кофейни.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="fas fa-clock"></i>
+                        <h3>Рабочее время</h3>
+                        <p>Мы открыты с понедельника по воскресенье с 8:00 до 20:00.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-light mt-auto">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <p><i class="fab fa-telegram fs-4"></i> Телеграм</p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="fab fa-vk fs-4"></i> ВК</p>
+            </div>
+            <div class="col-md-3">
+                <p><i class="fab fa-instagram fs-4"></i> Инстаграм</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
